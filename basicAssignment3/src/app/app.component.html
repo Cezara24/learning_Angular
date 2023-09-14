@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="col-xs-12">
+    <button 
+      class="btn btn-primary"
+      (click)="onClick()"
+    >Display details</button>
+    <p *ngIf="display">Secret Password = pizza</p>
+    <p 
+      *ngFor="let logItem of logs; let i = index"
+      [ngStyle]="{ backgroundColor: i >= 4 ? 'blue' : 'transparent' }"
+      [ngClass]="{ white: i >= 4 }"
+    >{{logItem}}</p>
+    <!-- <app-log></app-log> -->
+  </div>
+</div>

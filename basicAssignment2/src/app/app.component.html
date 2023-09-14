@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="col-xs-12">
+    <p>Username</p>
+    <input
+      [(ngModel)] = "userName"
+    >
+    <p>{{ userName }}</p>
+    <button 
+      class="btn btn-primary"
+      [disabled]="!userName"
+      (click)="resetUsername()"
+    >
+      Reset User
+    </button>
+  </div>
+</div>
