@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'recipesApp';
+  section: string = 'recipes';
+
+  displaySection(section: string) {
+    console.log(section);
+    this.section = section;
+  }
 }
